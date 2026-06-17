@@ -1,0 +1,9 @@
+{
+  "name": "fifa-match-calendar",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync-scores.js",
+    "preview": "python3 -m http.server 8080"
+  }
+}

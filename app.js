@@ -89,6 +89,9 @@ let matches = [];     // normalized matches, sorted by kickoff time
 let updatedAt = null; // Date parsed from matches.json "updatedAt", if present
 let loadedAt = null;  // Date when the data was loaded (fallback timestamp)
 let dataSource = '';  // where the data came from, shown in the footer
+let livePollTimer = null;
+const LIVE_POLL_MS = 60_000;      // default refresh interval
+const LIVE_POLL_FAST_MS = 30_000; // when a match is live
 
 /* ---------- Element lookups ---------- */
 const $ = (selector) => document.querySelector(selector);
@@ -584,6 +587,83 @@ function wireControls() {
   });
 }
 
+/* ============================================================
+   Live score refresh (via /api/scores on Cloudflare Pages)
+   ============================================================ */
+
+function hasLiveMatch() {
+  return matches.some((m) => String(m.status || '').toLowerCase() === 'live');
+}
+
+function hasRecentWorldCupMatch() {
+  const now = Date.now();
+  const windowMs = 4 * 60 * 60 * 1000; // kickoff ± 4h
+  return matches.some((m) => {
+    if (!/fifa world cup 2026/i.test(m.competition || '')) return false;
+    const delta = Math.abs(m.kickoff.getTime() - now);
+    return delta <= windowMs || String(m.status || '').toLowerCase() === 'live';
+  });
+}
+
+function mergeLiveUpdates(updates, sourceUpdatedAt) {
+  if (!updates?.length) return false;
+
+  let changed = false;
+  const byId = new Map(matches.map((m) => [m.id, m]));
+
+  for (const patch of updates) {
+    const match = byId.get(patch.id);
+    if (!match) continue;
+
+    const curStatus = String(match.status || 'upcoming').toLowerCase();
+    const nextStatus = String(patch.status || 'upcoming').toLowerCase();
+    if (curStatus === 'final' && nextStatus !== 'final') continue;
+    if (nextStatus === 'upcoming' && curStatus !== 'upcoming') continue;
+
+    const same =
+      match.status === patch.status &&
+      match.scoreA === patch.scoreA &&
+      match.scoreB === patch.scoreB;
+    if (same) continue;
+
+    match.status = patch.status;
+    match.scoreA = patch.scoreA;
+    match.scoreB = patch.scoreB;
+    changed = true;
+  }
+
+  if (changed && sourceUpdatedAt) {
+    const parsed = new Date(sourceUpdatedAt);
+    if (!Number.isNaN(parsed.getTime())) updatedAt = parsed;
+  }
+
+  return changed;
+}
+
+async function pollLiveScores() {
+  if (!hasRecentWorldCupMatch()) return;
+
+  try {
+    const res = await fetch('/api/scores', { cache: 'no-store' });
+    if (!res.ok) return;
+    const json = await res.json();
+    if (mergeLiveUpdates(json.updates, json.updatedAt)) {
+      render();
+      scheduleLivePolling();
+    }
+  } catch {
+    // Local preview without Pages Functions — matches.json is the source of truth.
+  }
+}
+
+function scheduleLivePolling() {
+  clearInterval(livePollTimer);
+  if (!hasRecentWorldCupMatch()) return;
+
+  const interval = hasLiveMatch() ? LIVE_POLL_FAST_MS : LIVE_POLL_MS;
+  livePollTimer = setInterval(pollLiveScores, interval);
+}
+
 // On first load, jump past finished matches so today / the next kickoff
 // is on screen (the results above stay reachable by scrolling up).
 function scrollToUpcoming() {
@@ -598,4 +678,6 @@ function scrollToUpcoming() {
   await loadData();
   render();
   scrollToUpcoming();
+  await pollLiveScores();
+  scheduleLivePolling();
 })();

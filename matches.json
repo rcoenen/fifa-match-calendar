@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-10T23:40:50Z",
+  "updatedAt": "2026-06-17T23:50:45.759Z",
   "matches": [
     {
       "id": "match-001",
@@ -855,9 +855,9 @@
       "teamB": "South Africa",
       "venue": "Estadio Azteca",
       "city": "Mexico City",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 2,
+      "scoreB": 0
     },
     {
       "id": "match-067",
@@ -868,9 +868,9 @@
       "teamB": "Czechia",
       "venue": "Estadio Akron",
       "city": "Guadalajara",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 2,
+      "scoreB": 1
     },
     {
       "id": "match-068",
@@ -881,9 +881,9 @@
       "teamB": "Bosnia and Herzegovina",
       "venue": "BMO Field",
       "city": "Toronto",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 1,
+      "scoreB": 1
     },
     {
       "id": "match-069",
@@ -894,9 +894,9 @@
       "teamB": "Paraguay",
       "venue": "SoFi Stadium",
       "city": "Inglewood",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 4,
+      "scoreB": 1
     },
     {
       "id": "match-070",
@@ -907,9 +907,9 @@
       "teamB": "Switzerland",
       "venue": "Levi's Stadium",
       "city": "Santa Clara",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 1,
+      "scoreB": 1
     },
     {
       "id": "match-071",
@@ -920,9 +920,9 @@
       "teamB": "Morocco",
       "venue": "MetLife Stadium",
       "city": "East Rutherford",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 1,
+      "scoreB": 1
     },
     {
       "id": "match-072",
@@ -933,9 +933,9 @@
       "teamB": "Scotland",
       "venue": "Gillette Stadium",
       "city": "Foxborough",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 0,
+      "scoreB": 1
     },
     {
       "id": "match-073",
@@ -946,9 +946,9 @@
       "teamB": "Türkiye",
       "venue": "BC Place",
       "city": "Vancouver",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 2,
+      "scoreB": 0
     },
     {
       "id": "match-074",
@@ -959,9 +959,9 @@
       "teamB": "Curaçao",
       "venue": "NRG Stadium",
       "city": "Houston",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 7,
+      "scoreB": 1
     },
     {
       "id": "match-075",
@@ -972,9 +972,9 @@
       "teamB": "Japan",
       "venue": "AT&T Stadium",
       "city": "Arlington",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 2,
+      "scoreB": 2
     },
     {
       "id": "match-076",
@@ -985,9 +985,9 @@
       "teamB": "Ecuador",
       "venue": "Lincoln Financial Field",
       "city": "Philadelphia",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 1,
+      "scoreB": 0
     },
     {
       "id": "match-077",
@@ -998,9 +998,9 @@
       "teamB": "Tunisia",
       "venue": "Estadio BBVA",
       "city": "Monterrey",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 5,
+      "scoreB": 1
     },
     {
       "id": "match-078",
@@ -1011,9 +1011,9 @@
       "teamB": "Cape Verde",
       "venue": "Mercedes-Benz Stadium",
       "city": "Atlanta",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 0,
+      "scoreB": 0
     },
     {
       "id": "match-079",
@@ -1024,9 +1024,9 @@
       "teamB": "Egypt",
       "venue": "Lumen Field",
       "city": "Seattle",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 1,
+      "scoreB": 1
     },
     {
       "id": "match-080",
@@ -1037,9 +1037,9 @@
       "teamB": "Uruguay",
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 1,
+      "scoreB": 1
     },
     {
       "id": "match-081",
@@ -1050,9 +1050,9 @@
       "teamB": "New Zealand",
       "venue": "SoFi Stadium",
       "city": "Inglewood",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 2,
+      "scoreB": 2
     },
     {
       "id": "match-082",
@@ -1063,9 +1063,9 @@
       "teamB": "Senegal",
       "venue": "MetLife Stadium",
       "city": "East Rutherford",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 3,
+      "scoreB": 1
     },
     {
       "id": "match-083",
@@ -1076,9 +1076,9 @@
       "teamB": "Norway",
       "venue": "Gillette Stadium",
       "city": "Foxborough",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 1,
+      "scoreB": 4
     },
     {
       "id": "match-084",
@@ -1089,9 +1089,9 @@
       "teamB": "Algeria",
       "venue": "Arrowhead Stadium",
       "city": "Kansas City",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 3,
+      "scoreB": 0
     },
     {
       "id": "match-085",
@@ -1102,9 +1102,9 @@
       "teamB": "Jordan",
       "venue": "Levi's Stadium",
       "city": "Santa Clara",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 3,
+      "scoreB": 1
     },
     {
       "id": "match-086",
@@ -1115,9 +1115,9 @@
       "teamB": "DR Congo",
       "venue": "NRG Stadium",
       "city": "Houston",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 1,
+      "scoreB": 1
     },
     {
       "id": "match-087",
@@ -1128,9 +1128,9 @@
       "teamB": "Croatia",
       "venue": "AT&T Stadium",
       "city": "Arlington",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 4,
+      "scoreB": 2
     },
     {
       "id": "match-088",
@@ -1141,9 +1141,9 @@
       "teamB": "Panama",
       "venue": "BMO Field",
       "city": "Toronto",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "live",
+      "scoreA": 0,
+      "scoreB": 0
     },
     {
       "id": "match-089",

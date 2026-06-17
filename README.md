@@ -8,20 +8,51 @@ A simple, readable FIFA match calendar for World Cup 2026. Who plays, when, and 
 
 Plain HTML, CSS, and JavaScript. No framework, no build step. Match data lives in `matches.json` (with an embedded fallback copy in `index.html` for offline `file://` use).
 
-## Local preview
+## Live scores & results
 
-Serve the folder with any static file server, for example:
+World Cup match scores are pulled from ESPN's public API (no key required).
+
+| Layer | What it does |
+|---|---|
+| **Browser** | Polls `/api/scores` every 30–60s during live/recent matches and updates cards in place |
+| **`npm run sync`** | Writes ESPN results into `matches.json` + the `index.html` fallback |
+| **GitHub Action** | Runs `npm run sync` every 15 minutes, commits changes, deploys to Cloudflare Pages |
+
+### Update scores manually
+
+```bash
+npm run sync
+wrangler pages deploy . --project-name=fifa-match-calendar --branch=main
+```
+
+### GitHub Action secrets (optional, for auto-deploy)
+
+Add these repo secrets if you want the workflow to deploy after syncing:
+
+- `CLOUDFLARE_API_TOKEN` — token with Cloudflare Pages edit permission
+- `CLOUDFLARE_ACCOUNT_ID` — your Cloudflare account ID
+
+Without them, the workflow still commits score updates to GitHub; you deploy with Wrangler yourself.
+
+## Local preview
 
 ```bash
 python3 -m http.server 8080
+# or: npm run preview
 ```
 
-Then open http://localhost:8080
+Open http://localhost:8080
 
-## Updating matches
+Live polling needs the Cloudflare Pages Function (`/api/scores`). Locally you'll see static `matches.json` data unless you use `wrangler pages dev`.
 
-Edit `matches.json`, then sync the embedded fallback in `index.html` if you want offline/file:// support to stay in step.
+## Updating the schedule
+
+Edit `matches.json`, then sync the embedded fallback in `index.html` (or run `npm run sync` which rewrites both when scores change).
 
 ## Deploy
 
-Static assets deploy cleanly to Cloudflare Pages (or any static host). Point the project at this directory with no build command.
+```bash
+wrangler pages deploy . --project-name=fifa-match-calendar --branch=main
+```
+
+Static assets + `functions/` deploy together. No build command.
