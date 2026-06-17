@@ -1,0 +1,13 @@
+{
+  "name": "FIFA Match Calendar",
+  "short_name": "Matches",
+  "description": "Who plays, when, and at what time — every match in New York time.",
+  "start_url": ".",
+  "display": "browser",
+  "background_color": "#f5f4ee",
+  "theme_color": "#0c7a3d",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
