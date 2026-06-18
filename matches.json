@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-18T21:14:46.553Z",
+  "updatedAt": "2026-06-18T23:12:40.979Z",
   "matches": [
     {
       "id": "match-001",
@@ -1193,9 +1193,9 @@
       "teamB": "Qatar",
       "venue": "BC Place",
       "city": "Vancouver",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "live",
+      "scoreA": 3,
+      "scoreB": 0
     },
     {
       "id": "match-093",
