@@ -80,9 +80,10 @@ const FLAG_LOOKUP = new Map(
 /* ---------- UI state ---------- */
 const state = {
   tzKey: 'ny',    // 'ny' | 'local' | 'utc'
-  filter: 'all',  // 'all' | 'today' | 'tomorrow' | 'week' | 'results'
+  filter: 'today',  // 'all' | 'today' | 'tomorrow' | 'week' | 'results'
   query: '',      // current search text
   team: null,     // exact team name — set by tapping a team on any card
+  includeFriendlies: false, // pre-tournament warm-up friendlies (off by default)
 };
 
 let matches = [];     // normalized matches, sorted by kickoff time
@@ -108,6 +109,7 @@ const els = {
   teamClear: $('#team-clear'),
   filterButtons: [...document.querySelectorAll('button[data-filter]')],
   tzButtons: [...document.querySelectorAll('button[data-tz]')],
+  warmupsToggle: document.querySelector('button[data-toggle="warmups"]'),
 };
 
 /* ============================================================
@@ -265,7 +267,8 @@ function getVisibleMatches() {
     // every game played in Mexico City the way a text search would.
     if (state.team && m.teamA !== state.team && m.teamB !== state.team) return false;
     if (query && !m.haystack.includes(query)) return false;
-    return true; // "all" hides nothing — past matches stay visible
+    if (!state.includeFriendlies && isFriendly(m)) return false;
+    return true;
   });
 }
 
@@ -287,6 +290,26 @@ const isFinished = (m) => FINISHED_STATUSES.includes(String(m.status || '').toLo
 // Friendlies get their own amber tag so they're never mistaken
 // for tournament matches. Detected from the competition/stage text.
 const isFriendly = (m) => /friendly/i.test(`${m.competition || ''} ${m.stage || ''}`);
+const isTournament = (m) => /fifa world cup 2026/i.test(m.competition || '');
+
+function tournamentStartDividerHtml() {
+  const first = matches.find(isTournament);
+  const when = first ? formatDayHeading(first.kickoff) : 'June 2026';
+  const time = first && !first.dateOnly ? formatTime(first.kickoff) : '';
+  const opener = first ? `${first.teamA} vs ${first.teamB}` : 'Opening match';
+  const detail = time ? `${when} · ${time} · ${opener}` : `${when} · ${opener}`;
+
+  return `
+    <div class="tournament-start" role="separator" aria-label="FIFA World Cup 2026 tournament begins">
+      <span class="tournament-start-line" aria-hidden="true"></span>
+      <div class="tournament-start-body">
+        <p class="tournament-start-kicker">FIFA World Cup 2026</p>
+        <p class="tournament-start-title">Tournament begins</p>
+        <p class="tournament-start-detail">${esc(detail)}</p>
+      </div>
+      <span class="tournament-start-line" aria-hidden="true"></span>
+    </div>`;
+}
 
 /* ============================================================
    Rendering
@@ -344,6 +367,7 @@ function render() {
   els.tzNote.textContent = tzNoteText();
   els.filterButtons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.filter === state.filter)));
   els.tzButtons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.tz === state.tzKey)));
+  els.warmupsToggle?.setAttribute('aria-pressed', String(state.includeFriendlies));
 
   const visible = getVisibleMatches();
 
@@ -359,7 +383,18 @@ function render() {
   const tomorrowKey = dayKeyWithOffset(1);
 
   let html = '';
+  let tournamentDividerShown = false;
+  let sawFriendly = false;
+
   for (const [key, dayMatches] of groups) {
+    if (state.includeFriendlies) {
+      if (dayMatches.some(isFriendly)) sawFriendly = true;
+      if (!tournamentDividerShown && sawFriendly && dayMatches.some(isTournament)) {
+        html += tournamentStartDividerHtml();
+        tournamentDividerShown = true;
+      }
+    }
+
     const pill =
       key === todayKey ? '<span class="day-pill">Today</span>'
       : key === tomorrowKey ? '<span class="day-pill is-soft">Tomorrow</span>'
@@ -531,6 +566,10 @@ function wireControls() {
   els.filterButtons.forEach((b) =>
     b.addEventListener('click', () => { state.filter = b.dataset.filter; render(); })
   );
+  els.warmupsToggle?.addEventListener('click', () => {
+    state.includeFriendlies = !state.includeFriendlies;
+    render();
+  });
   els.tzButtons.forEach((b) =>
     b.addEventListener('click', () => { state.tzKey = b.dataset.tz; render(); })
   );

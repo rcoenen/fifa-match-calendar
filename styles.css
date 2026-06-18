@@ -196,6 +196,11 @@ code {
   border-color: var(--accent);
   color: #fff;
 }
+.chip-warmups[aria-pressed="true"] {
+  background: var(--friendly-ink);
+  border-color: var(--friendly-ink);
+  color: #fff;
+}
 
 /* Selected-team pill (shown in the sticky bar when a team is tapped) */
 .team-bar {
@@ -287,6 +292,60 @@ main { padding-bottom: 8px; }
   color: var(--accent);
 }
 
+/* ---------- Tournament start divider ---------- */
+
+.tournament-start {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 14px;
+  margin: 28px 0 22px;
+}
+
+.tournament-start-line {
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--accent) 55%, var(--line)) 18%,
+    color-mix(in srgb, var(--accent) 55%, var(--line)) 82%,
+    transparent
+  );
+}
+
+.tournament-start-body {
+  text-align: center;
+  padding: 14px 18px;
+  background: var(--accent-soft);
+  border: 2px solid color-mix(in srgb, var(--accent) 35%, var(--line));
+  border-radius: calc(var(--radius) + 2px);
+  min-width: min(100%, 320px);
+}
+
+.tournament-start-kicker {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.tournament-start-title {
+  margin: 4px 0 0;
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--ink);
+}
+
+.tournament-start-detail {
+  margin: 6px 0 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
 /* ---------- Match cards ---------- */
 
 .match-list {
@@ -306,7 +365,24 @@ main { padding-bottom: 8px; }
   padding: 14px 16px 12px;
 }
 
-.card.is-live { border-color: var(--live); }
+.card.is-live {
+  border-color: color-mix(in srgb, var(--live) 55%, var(--line));
+  animation: live-card-pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes live-card-pulse {
+  0%, 100% {
+    background: var(--card);
+    box-shadow: var(--shadow);
+    border-color: color-mix(in srgb, var(--live) 40%, var(--line));
+  }
+  50% {
+    background: color-mix(in srgb, var(--live) 5%, var(--card));
+    box-shadow: var(--shadow), 0 0 0 1px color-mix(in srgb, var(--live) 22%, transparent),
+      0 0 18px color-mix(in srgb, var(--live) 12%, transparent);
+    border-color: color-mix(in srgb, var(--live) 70%, var(--line));
+  }
+}
 
 .card-top {
   display: flex;
@@ -370,7 +446,9 @@ main { padding-bottom: 8px; }
 }
 @keyframes live-pulse { 50% { opacity: 0.25; } }
 @media (prefers-reduced-motion: reduce) {
-  .badge-live::before { animation: none; }
+  .badge-live::before,
+  .card.is-live { animation: none; }
+  .card.is-live { border-color: var(--live); }
 }
 
 /* Team names — the big readable line */
