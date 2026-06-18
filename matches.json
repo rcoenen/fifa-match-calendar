@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-17T23:50:45.759Z",
+  "updatedAt": "2026-06-18T04:24:28.109Z",
   "matches": [
     {
       "id": "match-001",
@@ -1141,8 +1141,8 @@
       "teamB": "Panama",
       "venue": "BMO Field",
       "city": "Toronto",
-      "status": "live",
-      "scoreA": 0,
+      "status": "final",
+      "scoreA": 1,
       "scoreB": 0
     },
     {
@@ -1154,9 +1154,9 @@
       "teamB": "Colombia",
       "venue": "Estadio Azteca",
       "city": "Mexico City",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 1,
+      "scoreB": 3
     },
     {
       "id": "match-090",
