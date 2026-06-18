@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-18T04:24:28.109Z",
+  "updatedAt": "2026-06-18T16:18:06.310Z",
   "matches": [
     {
       "id": "match-001",
@@ -1167,9 +1167,9 @@
       "teamB": "South Africa",
       "venue": "Mercedes-Benz Stadium",
       "city": "Atlanta",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "live",
+      "scoreA": 1,
+      "scoreB": 0
     },
     {
       "id": "match-091",
