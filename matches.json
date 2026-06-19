@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-18T23:12:40.979Z",
+  "updatedAt": "2026-06-19T02:08:19.612Z",
   "matches": [
     {
       "id": "match-001",
@@ -1193,8 +1193,8 @@
       "teamB": "Qatar",
       "venue": "BC Place",
       "city": "Vancouver",
-      "status": "live",
-      "scoreA": 3,
+      "status": "final",
+      "scoreA": 6,
       "scoreB": 0
     },
     {
@@ -1206,9 +1206,9 @@
       "teamB": "South Korea",
       "venue": "Estadio Akron",
       "city": "Guadalajara",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "live",
+      "scoreA": 0,
+      "scoreB": 0
     },
     {
       "id": "match-094",
