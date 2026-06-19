@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-19T02:08:19.612Z",
+  "updatedAt": "2026-06-19T07:29:57.384Z",
   "matches": [
     {
       "id": "match-001",
@@ -1206,8 +1206,8 @@
       "teamB": "South Korea",
       "venue": "Estadio Akron",
       "city": "Guadalajara",
-      "status": "live",
-      "scoreA": 0,
+      "status": "final",
+      "scoreA": 1,
       "scoreB": 0
     },
     {
