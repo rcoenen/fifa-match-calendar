@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-19T20:52:53.427Z",
+  "updatedAt": "2026-06-19T22:08:10.610Z",
   "matches": [
     {
       "id": "match-001",
@@ -1219,7 +1219,7 @@
       "teamB": "Australia",
       "venue": "Lumen Field",
       "city": "Seattle",
-      "status": "live",
+      "status": "final",
       "scoreA": 2,
       "scoreB": 0
     },
@@ -1232,9 +1232,9 @@
       "teamB": "Morocco",
       "venue": "Gillette Stadium",
       "city": "Foxborough",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "live",
+      "scoreA": 0,
+      "scoreB": 1
     },
     {
       "id": "match-096",
