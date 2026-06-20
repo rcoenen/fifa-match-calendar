@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-20T01:36:32.093Z",
+  "updatedAt": "2026-06-20T06:03:59.480Z",
   "matches": [
     {
       "id": "match-001",
@@ -1245,7 +1245,7 @@
       "teamB": "Haiti",
       "venue": "Lincoln Financial Field",
       "city": "Philadelphia",
-      "status": "live",
+      "status": "final",
       "scoreA": 3,
       "scoreB": 0
     },
@@ -1258,9 +1258,9 @@
       "teamB": "Paraguay",
       "venue": "Levi's Stadium",
       "city": "Santa Clara",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 0,
+      "scoreB": 1
     },
     {
       "id": "match-098",
