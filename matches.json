@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-20T21:56:00.374Z",
+  "updatedAt": "2026-06-20T23:16:53.032Z",
   "matches": [
     {
       "id": "match-001",
@@ -1284,8 +1284,8 @@
       "teamB": "Côte d'Ivoire",
       "venue": "BMO Field",
       "city": "Toronto",
-      "status": "live",
-      "scoreA": 1,
+      "status": "final",
+      "scoreA": 2,
       "scoreB": 1
     },
     {
