@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-20T06:03:59.480Z",
+  "updatedAt": "2026-06-20T17:40:41.793Z",
   "matches": [
     {
       "id": "match-001",
@@ -1271,9 +1271,9 @@
       "teamB": "Sweden",
       "venue": "NRG Stadium",
       "city": "Houston",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "live",
+      "scoreA": 2,
+      "scoreB": 0
     },
     {
       "id": "match-099",
