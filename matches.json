@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-20T20:41:55.449Z",
+  "updatedAt": "2026-06-20T21:56:00.374Z",
   "matches": [
     {
       "id": "match-001",
@@ -1285,7 +1285,7 @@
       "venue": "BMO Field",
       "city": "Toronto",
       "status": "live",
-      "scoreA": 0,
+      "scoreA": 1,
       "scoreB": 1
     },
     {
