@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-21T18:53:01.723Z",
+  "updatedAt": "2026-06-21T20:26:58.096Z",
   "matches": [
     {
       "id": "match-001",
@@ -1336,9 +1336,9 @@
       "teamB": "Iran",
       "venue": "SoFi Stadium",
       "city": "Inglewood",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "live",
+      "scoreA": 0,
+      "scoreB": 0
     },
     {
       "id": "match-104",
