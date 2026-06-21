@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-21T21:57:22.141Z",
+  "updatedAt": "2026-06-21T23:24:48.090Z",
   "matches": [
     {
       "id": "match-001",
@@ -1349,9 +1349,9 @@
       "teamB": "Cape Verde",
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "live",
+      "scoreA": 2,
+      "scoreB": 1
     },
     {
       "id": "match-105",
