@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-21T01:59:27.429Z",
+  "updatedAt": "2026-06-21T07:00:50.587Z",
   "matches": [
     {
       "id": "match-001",
@@ -1310,9 +1310,9 @@
       "teamB": "Japan",
       "venue": "Estadio BBVA",
       "city": "Monterrey",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 0,
+      "scoreB": 4
     },
     {
       "id": "match-102",
