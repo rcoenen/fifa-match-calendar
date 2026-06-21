@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-21T07:00:50.587Z",
+  "updatedAt": "2026-06-21T17:06:23.101Z",
   "matches": [
     {
       "id": "match-001",
@@ -1323,9 +1323,9 @@
       "teamB": "Saudi Arabia",
       "venue": "Mercedes-Benz Stadium",
       "city": "Atlanta",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "live",
+      "scoreA": 3,
+      "scoreB": 0
     },
     {
       "id": "match-103",
