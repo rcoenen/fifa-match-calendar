@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-22T02:03:40.089Z",
+  "updatedAt": "2026-06-22T07:42:34.559Z",
   "matches": [
     {
       "id": "match-001",
@@ -1362,9 +1362,9 @@
       "teamB": "Egypt",
       "venue": "BC Place",
       "city": "Vancouver",
-      "status": "live",
+      "status": "final",
       "scoreA": 1,
-      "scoreB": 0
+      "scoreB": 3
     },
     {
       "id": "match-106",
