@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-22T22:57:17.984Z",
+  "updatedAt": "2026-06-23T00:16:50.705Z",
   "matches": [
     {
       "id": "match-001",
@@ -1389,7 +1389,7 @@
       "venue": "Lincoln Financial Field",
       "city": "Philadelphia",
       "status": "live",
-      "scoreA": 1,
+      "scoreA": 2,
       "scoreB": 0
     },
     {
@@ -1401,9 +1401,9 @@
       "teamB": "Senegal",
       "venue": "MetLife Stadium",
       "city": "East Rutherford",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "live",
+      "scoreA": 0,
+      "scoreB": 0
     },
     {
       "id": "match-109",
