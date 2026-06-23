@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23T04:42:19.058Z",
+  "updatedAt": "2026-06-23T08:21:32.468Z",
   "matches": [
     {
       "id": "match-001",
@@ -1414,9 +1414,9 @@
       "teamB": "Algeria",
       "venue": "Levi's Stadium",
       "city": "Santa Clara",
-      "status": "live",
+      "status": "final",
       "scoreA": 1,
-      "scoreB": 1
+      "scoreB": 2
     },
     {
       "id": "match-110",
