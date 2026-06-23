@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23T22:39:20.749Z",
+  "updatedAt": "2026-06-23T23:41:39.456Z",
   "matches": [
     {
       "id": "match-001",
@@ -1453,9 +1453,9 @@
       "teamB": "Croatia",
       "venue": "BMO Field",
       "city": "Toronto",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "live",
+      "scoreA": 0,
+      "scoreB": 0
     },
     {
       "id": "match-113",
