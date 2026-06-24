@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T20:59:46.840Z",
+  "updatedAt": "2026-06-24T22:25:32.400Z",
   "matches": [
     {
       "id": "match-001",
@@ -1505,9 +1505,9 @@
       "teamB": "Brazil",
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "live",
+      "scoreA": 0,
+      "scoreB": 2
     },
     {
       "id": "match-117",
@@ -1518,9 +1518,9 @@
       "teamB": "Haiti",
       "venue": "Mercedes-Benz Stadium",
       "city": "Atlanta",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "live",
+      "scoreA": 0,
+      "scoreB": 1
     },
     {
       "id": "match-118",
