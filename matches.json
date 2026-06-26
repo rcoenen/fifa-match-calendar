@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-26T04:50:58.488Z",
+  "updatedAt": "2026-06-26T20:12:01.221Z",
   "matches": [
     {
       "id": "match-001",
@@ -1635,9 +1635,9 @@
       "teamB": "France",
       "venue": "Gillette Stadium",
       "city": "Foxborough",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "live",
+      "scoreA": 1,
+      "scoreB": 3
     },
     {
       "id": "match-127",
@@ -1648,9 +1648,9 @@
       "teamB": "Iraq",
       "venue": "BMO Field",
       "city": "Toronto",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "live",
+      "scoreA": 1,
+      "scoreB": 0
     },
     {
       "id": "match-128",
