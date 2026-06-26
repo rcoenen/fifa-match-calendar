@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-26T00:18:10.404Z",
+  "updatedAt": "2026-06-26T04:50:58.488Z",
   "matches": [
     {
       "id": "match-001",
@@ -1583,9 +1583,9 @@
       "teamB": "Sweden",
       "venue": "AT&T Stadium",
       "city": "Arlington",
-      "status": "live",
+      "status": "final",
       "scoreA": 1,
-      "scoreB": 0
+      "scoreB": 1
     },
     {
       "id": "match-123",
@@ -1596,9 +1596,9 @@
       "teamB": "Netherlands",
       "venue": "Arrowhead Stadium",
       "city": "Kansas City",
-      "status": "live",
+      "status": "final",
       "scoreA": 1,
-      "scoreB": 2
+      "scoreB": 3
     },
     {
       "id": "match-124",
@@ -1609,9 +1609,9 @@
       "teamB": "United States",
       "venue": "SoFi Stadium",
       "city": "Inglewood",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 3,
+      "scoreB": 2
     },
     {
       "id": "match-125",
@@ -1622,9 +1622,9 @@
       "teamB": "Australia",
       "venue": "Levi's Stadium",
       "city": "Santa Clara",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 0,
+      "scoreB": 0
     },
     {
       "id": "match-126",
