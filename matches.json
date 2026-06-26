@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-25T22:56:26.708Z",
+  "updatedAt": "2026-06-26T00:18:10.404Z",
   "matches": [
     {
       "id": "match-001",
@@ -1583,9 +1583,9 @@
       "teamB": "Sweden",
       "venue": "AT&T Stadium",
       "city": "Arlington",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "live",
+      "scoreA": 1,
+      "scoreB": 0
     },
     {
       "id": "match-123",
@@ -1596,9 +1596,9 @@
       "teamB": "Netherlands",
       "venue": "Arrowhead Stadium",
       "city": "Kansas City",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "live",
+      "scoreA": 1,
+      "scoreB": 2
     },
     {
       "id": "match-124",
