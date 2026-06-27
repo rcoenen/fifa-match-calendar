@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-27T22:43:48.296Z",
+  "updatedAt": "2026-06-27T23:44:58.486Z",
   "matches": [
     {
       "id": "match-001",
@@ -1713,7 +1713,7 @@
       "teamB": "England",
       "venue": "MetLife Stadium",
       "city": "East Rutherford",
-      "status": "live",
+      "status": "final",
       "scoreA": 0,
       "scoreB": 2
     },
@@ -1726,8 +1726,8 @@
       "teamB": "Ghana",
       "venue": "Lincoln Financial Field",
       "city": "Philadelphia",
-      "status": "live",
-      "scoreA": 1,
+      "status": "final",
+      "scoreA": 2,
       "scoreB": 1
     },
     {
@@ -1739,9 +1739,9 @@
       "teamB": "Portugal",
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "live",
+      "scoreA": 0,
+      "scoreB": 0
     },
     {
       "id": "match-135",
@@ -1752,9 +1752,9 @@
       "teamB": "Uzbekistan",
       "venue": "Mercedes-Benz Stadium",
       "city": "Atlanta",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "live",
+      "scoreA": 0,
+      "scoreB": 1
     },
     {
       "id": "match-136",
