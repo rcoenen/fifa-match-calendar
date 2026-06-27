@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-27T04:28:41.064Z",
+  "updatedAt": "2026-06-27T07:36:54.496Z",
   "matches": [
     {
       "id": "match-001",
@@ -1687,7 +1687,7 @@
       "teamB": "Iran",
       "venue": "Lumen Field",
       "city": "Seattle",
-      "status": "live",
+      "status": "final",
       "scoreA": 1,
       "scoreB": 1
     },
@@ -1700,9 +1700,9 @@
       "teamB": "Belgium",
       "venue": "BC Place",
       "city": "Vancouver",
-      "status": "live",
-      "scoreA": 0,
-      "scoreB": 2
+      "status": "final",
+      "scoreA": 1,
+      "scoreB": 5
     },
     {
       "id": "match-132",
