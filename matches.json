@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-27T07:36:54.496Z",
+  "updatedAt": "2026-06-27T21:31:17.698Z",
   "matches": [
     {
       "id": "match-001",
@@ -1713,9 +1713,9 @@
       "teamB": "England",
       "venue": "MetLife Stadium",
       "city": "East Rutherford",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "live",
+      "scoreA": 0,
+      "scoreB": 0
     },
     {
       "id": "match-133",
@@ -1726,9 +1726,9 @@
       "teamB": "Ghana",
       "venue": "Lincoln Financial Field",
       "city": "Philadelphia",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "live",
+      "scoreA": 0,
+      "scoreB": 0
     },
     {
       "id": "match-134",
