@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-27T23:44:58.486Z",
+  "updatedAt": "2026-06-28T01:56:46.868Z",
   "matches": [
     {
       "id": "match-001",
@@ -1739,7 +1739,7 @@
       "teamB": "Portugal",
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens",
-      "status": "live",
+      "status": "final",
       "scoreA": 0,
       "scoreB": 0
     },
@@ -1752,8 +1752,8 @@
       "teamB": "Uzbekistan",
       "venue": "Mercedes-Benz Stadium",
       "city": "Atlanta",
-      "status": "live",
-      "scoreA": 0,
+      "status": "final",
+      "scoreA": 3,
       "scoreB": 1
     },
     {
