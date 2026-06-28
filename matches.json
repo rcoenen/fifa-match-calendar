@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-28T01:56:46.868Z",
+  "updatedAt": "2026-06-28T06:33:39.345Z",
   "matches": [
     {
       "id": "match-001",
@@ -1765,9 +1765,9 @@
       "teamB": "Austria",
       "venue": "Arrowhead Stadium",
       "city": "Kansas City",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 3,
+      "scoreB": 3
     },
     {
       "id": "match-137",
@@ -1778,9 +1778,9 @@
       "teamB": "Argentina",
       "venue": "AT&T Stadium",
       "city": "Arlington",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "final",
+      "scoreA": 1,
+      "scoreB": 3
     },
     {
       "id": "match-138",
