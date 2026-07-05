@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-05T17:20:53.455Z",
+  "updatedAt": "2026-07-05T21:14:28.132Z",
   "matches": [
     {
       "id": "match-001",
@@ -2025,9 +2025,9 @@
       "teamB": "Norway",
       "venue": "MetLife Stadium",
       "city": "East Rutherford",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "live",
+      "scoreA": 0,
+      "scoreB": 0
     },
     {
       "id": "match-157",
