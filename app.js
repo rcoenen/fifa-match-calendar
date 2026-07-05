@@ -659,16 +659,38 @@ function mergeLiveUpdates(updates, sourceUpdatedAt) {
     if (curStatus === 'final' && nextStatus !== 'final') continue;
     if (nextStatus === 'upcoming' && curStatus !== 'upcoming') continue;
 
+    let touched = false;
+
+    // Team resolution (placeholder -> real names from ESPN).
+    if (patch.teamA != null && patch.teamA !== match.teamA) {
+      match.teamA = patch.teamA;
+      touched = true;
+    }
+    if (patch.teamB != null && patch.teamB !== match.teamB) {
+      match.teamB = patch.teamB;
+      touched = true;
+    }
+
     const same =
       match.status === patch.status &&
       match.scoreA === patch.scoreA &&
       match.scoreB === patch.scoreB;
-    if (same) continue;
+    if (!same) {
+      match.status = patch.status;
+      match.scoreA = patch.scoreA;
+      match.scoreB = patch.scoreB;
+      touched = true;
+    }
 
-    match.status = patch.status;
-    match.scoreA = patch.scoreA;
-    match.scoreB = patch.scoreB;
-    changed = true;
+    if (touched) {
+      // Team names changed -> rebuild the searchable blob used by the search box.
+      match.haystack = searchable(
+        [match.teamA, match.teamB, `${match.teamA} vs ${match.teamB}`, match.city, match.venue, match.competition, match.stage]
+          .filter(Boolean)
+          .join(' ')
+      );
+      changed = true;
+    }
   }
 
   if (changed && sourceUpdatedAt) {
