@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-06T19:20:22.105Z",
+  "updatedAt": "2026-07-06T21:11:33.605Z",
   "matches": [
     {
       "id": "match-001",
@@ -2051,9 +2051,9 @@
       "teamB": "Spain",
       "venue": "AT&T Stadium",
       "city": "Arlington",
-      "status": "live",
+      "status": "final",
       "scoreA": 0,
-      "scoreB": 0
+      "scoreB": 1
     },
     {
       "id": "match-159",
