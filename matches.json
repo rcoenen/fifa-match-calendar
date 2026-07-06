@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-05T22:16:40.427Z",
+  "updatedAt": "2026-07-06T01:24:52.962Z",
   "matches": [
     {
       "id": "match-001",
@@ -2038,9 +2038,9 @@
       "teamB": "England",
       "venue": "Estadio Azteca",
       "city": "Mexico City",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "live",
+      "scoreA": 0,
+      "scoreB": 0
     },
     {
       "id": "match-158",
