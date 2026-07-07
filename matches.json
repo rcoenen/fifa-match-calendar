@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T18:06:11.692Z",
+  "updatedAt": "2026-07-07T20:16:21.949Z",
   "matches": [
     {
       "id": "match-001",
@@ -2090,9 +2090,9 @@
       "teamB": "Colombia",
       "venue": "BC Place",
       "city": "Vancouver",
-      "status": "upcoming",
-      "scoreA": null,
-      "scoreB": null
+      "status": "live",
+      "scoreA": 0,
+      "scoreB": 0
     },
     {
       "id": "match-162",
