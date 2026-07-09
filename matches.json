@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-09T20:25:45.801Z",
+  "updatedAt": "2026-07-09T22:02:06.901Z",
   "matches": [
     {
       "id": "match-001",
@@ -2103,8 +2103,8 @@
       "teamB": "Morocco",
       "venue": "Gillette Stadium",
       "city": "Foxborough",
-      "status": "live",
-      "scoreA": 0,
+      "status": "final",
+      "scoreA": 2,
       "scoreB": 0
     },
     {
